@@ -1,0 +1,85 @@
+.react-modal-classname{
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+
+}
+.react-modal-classname .backdrop{
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.105);
+  z-index: 5;
+}
+.react-modal-classname .modal{
+  position: relative;
+  top:20px;
+  height: 50%;
+  min-width: 500px;
+  background-color: white;
+  z-index: 10;
+  border-radius: 6px;
+  padding: 10px;
+  box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.242);
+}
+.react-modal-classname .modal .close-icon{
+  right:20px;
+  position: absolute;
+  height: 20px;
+  width:20px;
+}
+.react-modal-classname .modal .close-icon div{
+  position: absolute;
+  height: 20px;
+  width: 2px;
+  left: 8px;
+  border-radius: 1px;
+  background-color: rgb(91, 91, 91);
+  transform: rotate(45deg);
+}
+.react-modal-classname .modal .close-icon div:first-of-type{
+  transform: rotate(-45deg);
+}
+/*From Up  */
+.modal-enter .backdrop {
+  opacity: 0.01;
+}
+
+.modal-enter.modal-enter-active .backdrop{
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.modal-leave .backdrop{
+  opacity: 1;
+}
+
+.modal-leave.modal-leave-active .backdrop{
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+/*  */
+.modal-enter .modal {
+  transform: translateY(-500px);
+}
+
+.modal-enter.modal-enter-active .modal{
+  transform: translateY(0px);
+  transition: transform 500ms ease-in;
+}
+
+.modal-leave .modal{
+  opacity: 1;
+}
+
+.modal-leave.modal-leave-active .modal{
+  transform: translateY(-500px);
+  transition: transform 300ms ease-in;
+}
