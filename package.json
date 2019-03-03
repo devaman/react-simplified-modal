@@ -1,6 +1,6 @@
 {
   "name": "react-simplified-modal",
-  "version": "0.1.5",
+  "version": "0.1.7",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": [
@@ -21,6 +21,13 @@
     "react-scripts": "^2.1.5",
     "rimraf": "^2.6.3"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devaman/react-simplified-modal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/devaman/react-simplified-modal/issues"
+  },
   "browserslist": [
     ">0.2%",
     "not dead",
@@ -29,5 +36,20 @@
   ],
   "dependencies": {
     "react-addons-css-transition-group": "^15.6.2"
-  }
+  },
+  "keywords": [
+    "modal",
+    "simple modal",
+    "backdrop modal",
+    "react",
+    "with transitions"
+  ],
+  "author": "Amit Chambial <chambialamit@gmail.com>",
+  "contributors": [
+    {
+      "name": "Amit Chambial",
+      "email": "chambialamit@gmail.com",
+      "url": "https://amitchambial.netlify.com"
+    }
+  ]
 }
